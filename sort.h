@@ -23,5 +23,7 @@ void forward_pass(listint_t **list, listint_t *start, listint_t *end, int *swapp
 void swap_nodes(listint_t **list, listint_t *start);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
+void merge(int *array, int *left, int *right, size_t size_left, size_t size_right);
+void merge_sort(int *array, size_t size);
 
 #endif /* SORT_H */
