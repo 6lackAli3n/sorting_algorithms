@@ -46,6 +46,7 @@ void radix_sort(int *array, size_t size)
 {
 	int max = array[0];
 	size_t i;
+	int exp;
 
 	for (i = 1; i < size; i++)
 	{
@@ -53,6 +54,6 @@ void radix_sort(int *array, size_t size)
 			max = array[i];
 	}
 
-	for (int exp = 1; max / exp > 0; exp *= 10)
+	for (exp = 1; max / exp > 0; exp *= 10)
 		counting_sort_radix(array, size, exp);
 }
