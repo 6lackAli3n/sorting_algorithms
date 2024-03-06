@@ -22,7 +22,6 @@ void selection_sort(int *array, size_t size)
 
 		for (j = i + 1; j < size; j++)
 		{
-			/* Find the index of the minimum element in the unsorted part of the array */
 			if (array[j] < array[min_index])
 				min_index = j;
 		}
@@ -37,4 +36,3 @@ void selection_sort(int *array, size_t size)
 		}
 	}
 }
-

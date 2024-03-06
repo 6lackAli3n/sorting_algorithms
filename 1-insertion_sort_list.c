@@ -20,19 +20,18 @@ void insertion_sort_list(listint_t **list)
 		temp = current->prev;
 		while (temp != NULL && temp->n > current->n)
 		{
-			/* Swap current node with its previous node */
 			if (temp->prev != NULL)
-				    temp->prev->next = current;
+				temp->prev->next = current;
 			current->prev = temp->prev;
 			temp->prev = current;
 			temp->next = current->next;
 			if (current->next != NULL)
-				    current->next->prev = temp;
+				current->next->prev = temp;
 			current->next = temp;
 
 			/* Update list pointer if necessary */
 			if (current->prev == NULL)
-				    *list = current;
+				*list = current;
 
 			/* Print list after each swap */
 			print_list(*list);

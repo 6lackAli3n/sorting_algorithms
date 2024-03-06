@@ -21,7 +21,7 @@ void swap_ints(int *a, int *b)
  * @size: The size of the array.
  * @left: The starting index of the subset to order.
  * @right: The ending index of the subset to order.
- * 
+ *
  * Return: The final partition index.
  *
  * Description: Uses the last element of the partition as the pivot.
